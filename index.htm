@@ -30,7 +30,7 @@
     <p>Enter All info below and click submit</p>
     <div class="content-container">
         
-      <form action="https://formsubmit.co/Jamesvauls52@gmail.com" method="POST" style="max-width: 600px; margin: auto; padding: 20px;">
+      <form action="https://formsubmit.co/Jamesvauls52@gmail.com" method="POST" style="max-width: 90vw; margin: auto; padding: 20px;">
         <h2>3D Printing Request Form</h2>
       
         <!-- Hidden input to disable captcha -->
@@ -41,17 +41,21 @@
         <input type="text" name="Name" id="name" required style="width: 100%; padding: 8px; margin-bottom: 15px;" />
       
         <!-- Color -->
-        <label for="color">Select Filament Color:</label>
+        <label for="color">Select Main Filament Color:</label>
         <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
           <select name="Color" id="color" onchange="updateColorPreview()" style="flex: 1; padding: 8px;">
             <option value="Black (#000000)">Black</option>
             <option value="White (#ffffff)">White</option>
-            <option value="Red (#ff0000)">Red</option>
-            <option value="Green (#00ff00)">Green</option>
-            <option value="Blue (#0000ff)">Blue</option>
-            <option value="Orange (#ff9900)">Orange</option>
-            <option value="Yellow (#ffff00)">Yellow</option>
-            <option value="Purple (#800080)">Purple</option>
+            <option value="Beige (#F7E6DE)">Beige</option>
+            <option value="Red (#C12E1F)">Red</option>
+            <option value="Maroon Red (#9D2235)">Maroon Red</option>
+            <option value="Green (#00AE42)">Green</option>
+            <option value="Mistletoe Green (#3F8E43)">Mistletoe Green</option>
+            <option value="Blue (#0000ff)">Blue (PETG ONLY)</option>
+            <option value="Orange (#FF6A13)">Orange</option>
+            <option value="Yellow (#F4EE2A)">Yellow</option>
+            <option value="Neon City (Blue-Magenta) (#0047BB; #BB22A3)">Neon City (Blue-Magenta)</option>
+            <option value="Glow Blue-to-Green (#7AC0E9; #A1FFAC)">Glow Blue-to-Green</option>"
           </select>
           <div id="colorPreview" style="width: 30px; height: 30px; border: 1px solid #ccc;"></div>
         </div>
@@ -61,7 +65,7 @@
         <textarea name="Model Idea / Drive Link" id="model" rows="4" required style="width: 100%; padding: 8px; margin-bottom: 15px;" placeholder="Paste a Google Drive link or describe your idea here..."></textarea>
       
         <!-- Submit -->
-        <button type="submit" style="padding: 10px 20px;">Submit Request</button>
+        <button type="submit" class="button">Submit Request</button>
       </form>
       
 

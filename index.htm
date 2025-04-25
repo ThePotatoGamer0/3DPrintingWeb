@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="preload" href="./CSS/stylesheet.css" as="style" />
+    <link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css">
+    <link rel="preload" href="./Javascript/Loader.js" as="script" />
+    <link rel="preload" href="./Javascript/Typingani.js" as="script" />
+    <link rel="preload" href="./Javascript/Switch.js" as="script" />
+    <link rel="preload" href="./Itchiologo.png" as="image"/>
+    <link rel="preload" href="./Rufflerlogo.jpg" as="image"/>
+</head>
+<body>
+    <nav>
+        <a href="../Homepage-Refreshed/">Home</a>
+        <a href="../Itch.io-BrowserGames/">Itchy</a>
+        <a href="../Ruffler/">Ruffler</a>
+        <a href="../Spicy/" id="spicyNavItem">Spicy</a>
+    </nav>
+    <div class="loader">
+        <div id="typing-text"></div>
+    </div> 
+    <div class="content">
+    <!-- Enter Header Here -->
+    <h1>Submit A 3D Printing Request Here!</h1>
+    <!-- Enter Content Here -->
+    <p>Enter All info below and click submit</p>
+    <div class="content-container">
+        
+      <form action="https://formsubmit.co/Jamesvauls52@gmail.com" method="POST" style="max-width: 600px; margin: auto; padding: 20px;">
+        <h2>3D Printing Request Form</h2>
+      
+        <!-- Hidden input to disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+      
+        <!-- Name -->
+        <label for="name">Your Name:</label>
+        <input type="text" name="Name" id="name" required style="width: 100%; padding: 8px; margin-bottom: 15px;" />
+      
+        <!-- Color -->
+        <label for="color">Select Filament Color:</label>
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+          <select name="Color" id="color" onchange="updateColorPreview()" style="flex: 1; padding: 8px;">
+            <option value="Black (#000000)">Black</option>
+            <option value="White (#ffffff)">White</option>
+            <option value="Red (#ff0000)">Red</option>
+            <option value="Green (#00ff00)">Green</option>
+            <option value="Blue (#0000ff)">Blue</option>
+            <option value="Orange (#ff9900)">Orange</option>
+            <option value="Yellow (#ffff00)">Yellow</option>
+            <option value="Purple (#800080)">Purple</option>
+          </select>
+          <div id="colorPreview" style="width: 30px; height: 30px; border: 1px solid #ccc;"></div>
+        </div>
+      
+        <!-- Model or Idea -->
+        <label for="model">Google Drive Link or Describe Your Idea:</label>
+        <textarea name="Model Idea / Drive Link" id="model" rows="4" required style="width: 100%; padding: 8px; margin-bottom: 15px;" placeholder="Paste a Google Drive link or describe your idea here..."></textarea>
+      
+        <!-- Submit -->
+        <button type="submit" style="padding: 10px 20px;">Submit Request</button>
+      </form>
+      
+
+
+    <p>Bottom Paragraph</p>
+    <!-- Enter Footer Here -->
+    <p>By yours Truely, ThePotatoGamer0</p>
+    <!-- End of Page -->
+    <div class="switchdiv">
+        <label class="switch">
+          <input type="checkbox" id="spicySwitch">
+          <span class="slider round"></span>
+        </label>
+        <span style="margin-left: 10px;">Show spicy Option</span>
+    </div>
+    </div>
+    <script src="./Javascript/Switch.js"></script>
+    <script src="./Javascript/Loader.js"></script>
+    <script src="./Javascript/Typingani.js"></script>
+    <script src="./Javascript/RequestForm.js"></script>
+</body>
